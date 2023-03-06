@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+import React from 'react';
 const Footer = () => {
   return (
     <footer className="bg-gray-700 text-gray-400 py-7">
@@ -12,17 +12,17 @@ const Footer = () => {
             </p>
             <ul className="flex space-x-4">
               <li>
-                <Link href="/pages/AboutMe.js" className="text-white hover:text-blue-500 transition-colors duration-300">
+                <Link href="/" className="text-white hover:text-blue-500 transition-colors duration-300">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/aboutme" className="text-white hover:text-blue-500 transition-colors duration-300">
+                <Link href="#about" className="text-white hover:text-blue-500 transition-colors duration-300">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-white hover:text-blue-500 transition-colors duration-300">
+                <Link href="/" className="text-white hover:text-blue-500 transition-colors duration-300">
                     Blog
                 </Link>
               </li>

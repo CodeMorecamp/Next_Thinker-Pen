@@ -1,20 +1,21 @@
 import Image from 'next/image';
-
-const About = () => {
+import Link from 'next/link';
+import React
+ from 'react';
+const AboutMe = () => {
   return (
-    <div className="bg-gray-100">
+    <>
+    <div id='about' className="bg-gray-100">
       <div className="max-w-screen-lg mx-auto px-4 py-16">
-        <h1 className="text-3xl font-bold mb-8">About Me</h1>
+        <h1 className="text-3xl font-bold mb-8">About The Author</h1>
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/3 flex-shrink-0">
             <div className="relative w-48 h-48 rounded-full overflow-hidden">
-              <Image
-                src="../public/profilepicture.jpg"
+              <img
+                src="/public/profilepicture.jpg"
                 alt="Profile Picture"
                 width={300}
                 height={300}
-                objectFit="cover"
-                objectPosition="center"
               />
             </div>
           </div>
@@ -32,5 +33,11 @@ const About = () => {
         </div>
       </div>
     </div>
+
+    
+    </>
+    
   )
 };
+
+export default AboutMe
